@@ -1,16 +1,59 @@
-# React + Vite
+University Affiliation Management System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based frontend for the University Affiliation Management System. It provides separate interfaces for Admin, College, and Inspector roles. The current version is a UI-only prototype intended for demonstrations and academic use.
 
-Currently, two official plugins are available:
+**The application includes:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A home page with role-based navigation.
 
-## React Compiler
+Login screens for each role (static validation).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dashboards for Admin, College, and Inspector, each with role-specific actions.
 
-## Expanding the ESLint configuration
+Local, component-level state for displaying sample data.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+There is no backend integration in this version. All data shown in the UI is mock data.
+
+Tech Stack
+
+React (JavaScript)
+
+Vite
+
+React Router
+
+Custom CSS (neutral, minimal theme)
+
+Running the Project
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+Build for production:
+
+npm run build
+
+Project Structure
+src/
+  components/
+    AppLayout.jsx
+  pages/
+    Home.jsx
+    Login.jsx
+    AdminDashboard.jsx
+    CollegeDashboard.jsx
+    InspectorDashboard.jsx
+  App.jsx
+  main.jsx
+  styles.css
+
+Notes
+
+This project is meant to represent the interface and flow of a university affiliation system. All API calls, authentication, and database operations can be added later based on requirements.
