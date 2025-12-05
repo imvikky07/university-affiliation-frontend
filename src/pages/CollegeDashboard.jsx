@@ -61,7 +61,7 @@ function CollegeDashboard() {
       <section className="section">
         <div className="section-header">
           <h2>New Affiliation Request</h2>
-          <span className="muted small">Local state only, no backend</span>
+          <span className="muted small">Local state only</span>
         </div>
         <form className="inline-form" onSubmit={handleAdd}>
           <div className="inline-field">
